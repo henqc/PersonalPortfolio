@@ -76,6 +76,6 @@ export const socialIcons = [
   },
   {
     icon: "/email.svg",
-    url: "mailto:henryq.chen101@gmail.com?subject=hello",
+    url: "mailto:henryqc.cs@gmail.com?subject=hello",
   },
 ];
