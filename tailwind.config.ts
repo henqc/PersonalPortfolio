@@ -21,8 +21,8 @@ const config: Config = {
       colors: {
         gray: "#1c1c22",
         blue: {
-          DEFAULT: "#415A77",
-          100: "#778DA9",
+          DEFAULT: "#4593FF",
+          100: "#589eff",
         },
       },
       fontFamily: {
