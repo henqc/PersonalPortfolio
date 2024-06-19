@@ -12,13 +12,6 @@ export default function Home() {
           A freelance front-end developer and web designer helping startups all
           around the world gain their unfair advantage.
         </div>
-        <Image
-          className="ml-60"
-          alt=""
-          src={"/stars.svg"}
-          width={250}
-          height={250}
-        ></Image>
       </div>
     </div>
   );

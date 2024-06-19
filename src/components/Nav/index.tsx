@@ -12,7 +12,7 @@ export default function Nav() {
           {navList.map((navElement: any) => {
             return (
               <a href={navElement.path} key={navElement.label}>
-                <div className="text-black font-robotoSlab text-xl">
+                <div className="font-robotoSlab text-xl">
                   {navElement.label}
                 </div>
               </a>
