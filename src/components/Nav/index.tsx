@@ -1,4 +1,5 @@
 import { navList } from "@/utils/constants";
+
 import "@/app/globals.css";
 
 export default function Nav() {
