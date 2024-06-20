@@ -2,7 +2,7 @@ import { projectList } from "@/utils/constants";
 
 export default function Projects() {
   return (
-    <div>
+    <div id="projects" className="section">
       <div className="text-center text-5xl mb-7">Projects</div>
       <div className="flex gap-4">
         {projectList.map((projectList: any) => {

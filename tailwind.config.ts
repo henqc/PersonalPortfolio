@@ -32,6 +32,15 @@ const config: Config = {
       fontSize: {
         "9xl": "20.4rem",
       },
+      keyframes: {
+        gradient: {
+          "0%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+      },
+      animation: {
+        gradient: "gradient 3s linear infinite",
+      },
     },
   },
   plugins: [],

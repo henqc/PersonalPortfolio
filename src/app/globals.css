@@ -2,8 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #25295a,
+    #0d3071,
+    #4593ff,
+    #0d3071,
+    #25295a,
+    #0d3071,
+    #4593ff
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}
+
 @layer base {
   body {
     @apply bg-gray text-white leading-loose;
+  }
+  .h1 {
+    @apply text-[48px] xl:text-[115px] leading-[1.1] font-normal;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[100px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .section {
+    @apply py-8 xl:py-24 xl:h-screen flex items-center;
   }
 }
