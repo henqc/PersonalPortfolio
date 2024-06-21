@@ -31,6 +31,6 @@
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
   .section {
-    @apply py-8 xl:py-24 xl:h-screen flex items-center;
+    @apply py-8 xl:py-24 xl:min-h-screen flex items-center;
   }
 }

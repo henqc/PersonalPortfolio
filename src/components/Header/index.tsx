@@ -1,12 +1,19 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import MobileNav from "@/components/MobileNav";
 import Nav from "@/components/Nav";
 import Link from "next/link";
+
+import { useState } from "react";
 import "@/app/globals.css";
 
 export default function Header() {
+  const [header, setHeader] = useState(false);
+
+  const scrollHeader = () => {};
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="py-8 xl:py-12 text-white fixed w-full">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="#home">
           <h1 className="text-4xl font-gambarino">HC</h1>

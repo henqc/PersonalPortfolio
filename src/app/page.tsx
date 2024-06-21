@@ -12,8 +12,7 @@ export default function Portfolio() {
   return (
     <div className="overflow-hidden">
       <Home />
-
-      {/* <Bio />
+      {/*<Bio />
       <Experience />
       <Projects />
       <Contact />*/}

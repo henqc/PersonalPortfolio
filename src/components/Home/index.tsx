@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div id="home" className="section">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="flex flex-col gap-3 text-center xl:text-left font-robotoSlab">
             <motion.span
               variants={fadein({ direction: "up", delay: 0.3 })}
