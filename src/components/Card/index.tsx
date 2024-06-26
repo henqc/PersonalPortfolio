@@ -50,7 +50,7 @@ export default function Card(card: {
             </Link>
           </div>
         </div>
-        <div className="w-[400px] h-[350px] xl:w-[55%] xl:h-[80%] relative overflow-hidden rounded-3xl">
+        <div className="w-[300px] h-[250px] xl:w-[55%] xl:h-[80%] relative overflow-hidden rounded-3xl">
           <Image
             src={card.src}
             priority
