@@ -1,21 +1,35 @@
+"use client";
 import Bio from "@/components/Bio";
-import Icons from "@/components/Icons";
 import Projects from "@/components/Projects";
 import Home from "@/components/Home";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
-
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
-
+import SKillHeader from "@/components/SkillHeader";
+import ProjetHeader from "@/components/ProjectsHeader";
+import { useCallback, useEffect } from "react";
+import Lenis from "lenis";
 export default function Portfolio() {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    window.history.scrollRestoration = "manual";
+  }, []);
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-clip">
       <Home />
-      {/*<Bio />
+      <Bio />
+      <SKillHeader />
       <Experience />
+      <ProjetHeader />
       <Projects />
-      <Contact />*/}
+      <Contact />
     </div>
   );
 }

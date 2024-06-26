@@ -3,6 +3,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navList } from "@/utils/constants";
 import { CiMenuFries } from "react-icons/ci";
 import { usePathname } from "next/navigation";
+import { Link as ScrollLink } from "react-scroll";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { use } from "react";
 
@@ -15,25 +17,40 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Link className="font-gambarino" href="/">
+          <ScrollLink
+            className="font-gambarino cursor-pointer"
+            to="home"
+            smooth={true}
+            duration={500}
+          >
             HC
-          </Link>
+          </ScrollLink>
         </div>
         <nav className="flex flex-col justify-center items-center gap-8">
           {navList.map((link, index) => {
             return (
-              <Link
-                href={link.path}
+              <ScrollLink
+                to={link.path}
+                smooth={true}
+                duration={500}
                 key={index}
                 className={
-                  "text-xl capitalize font-robotoSlab font-medium hover:text-blue transition-all"
+                  "capitalize font-robotoSlab font-medium cursor-pointer hover:text-blue transition-all"
                 }
               >
                 {link.label}
-              </Link>
+              </ScrollLink>
             );
           })}
         </nav>
+        <ScrollLink
+          className="capitalize text-center font-robotoSlab font-medium cursor-pointer hover:text-blue transition-all"
+          to="contact"
+          smooth={true}
+          duration={500}
+        >
+          Get in Contact
+        </ScrollLink>
       </SheetContent>
     </Sheet>
   );

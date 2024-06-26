@@ -1,28 +1,52 @@
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaNodeJs,
+  FaAws,
+  FaPython,
+  FaJava,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+} from "react-icons/si";
+
 export const navList = [
   {
     label: "About Me",
-    path: "#aboutme",
+    path: "aboutme",
   },
   {
     label: "Skills",
-    path: "#skills",
+    path: "skills",
   },
   {
     label: "Projects",
-    path: "#projects",
+    path: "projects",
   },
 ];
 
 export const projectList = [
   {
-    title: "Data Visualizer",
-    description: "Work in progress...",
+    title: "Runway",
+    description:
+      "An exclusive network of the top university students in business development and engineering",
+    src: "/Runway.png",
     skills: ["Python", "R", "React"],
-    link: "/",
+    link: "https://www.joinrunway.io/",
+    color: "#27272c",
+    num: "01.",
   },
   {
-    title: "Runway Website",
-    description: "Work in progress...",
+    title: "Green Whistle",
+    description:
+      "Empowering ethical insiders to confidentially expose environmental misconduct",
+    src: "/GreenWhistle.png",
     skills: [
       "NextJS",
       "Tailwind",
@@ -30,11 +54,15 @@ export const projectList = [
       "AWS Dynamo/S3/EC2",
       "Java Spring",
     ],
-    link: "/",
+    link: "https://github.com/henqc/WhistleblowingApp",
+    color: "#27272c",
+    num: "02.",
   },
   {
-    title: "Discord Bot",
-    description: "Work in progress...",
+    title: "SpotiRecc",
+    description:
+      "Effortlessly discover new music tailored to your Spotify tastes",
+    src: "/SpotiRecc.png",
     skills: [
       "NextJS",
       "Tailwind",
@@ -42,11 +70,15 @@ export const projectList = [
       "AWS Dynamo/S3/EC2",
       "Java Spring",
     ],
-    link: "/",
+    link: "https://github.com/henqc/Spotify-Dash",
+    color: "#27272c",
+    num: "03.",
   },
   {
-    title: "Reccomendation Engine",
-    description: "Work in progress...",
+    title: "Movie Metrics",
+    description:
+      "Uncover cinematic insights and explore movie trends across the decades",
+    src: "/MovieMetric.png",
     skills: [
       "NextJS",
       "Tailwind",
@@ -54,7 +86,9 @@ export const projectList = [
       "AWS Dynamo/S3/EC2",
       "Java Spring",
     ],
-    link: "/",
+    link: "https://github.com/henqc/plotly-dash",
+    color: "#27272c",
+    num: "04.",
   },
 ];
 
@@ -70,5 +104,60 @@ export const socialIcons = [
   {
     icon: "/email.svg",
     url: "mailto:henryqc.cs@gmail.com?subject=hello",
+  },
+];
+
+export const skills = [
+  {
+    icon: FaHtml5,
+    name: "Html5",
+  },
+  {
+    icon: FaCss3,
+    name: "Css3",
+  },
+  {
+    icon: FaJs,
+    name: "Javascript",
+  },
+  {
+    icon: FaReact,
+    name: "ReactJs",
+  },
+  {
+    icon: FaFigma,
+    name: "Figma",
+  },
+  {
+    icon: FaNodeJs,
+    name: "NodeJs",
+  },
+  {
+    icon: SiTypescript,
+    name: "Typescript",
+  },
+  {
+    icon: SiNextdotjs,
+    name: "Nextjs",
+  },
+  {
+    icon: SiTailwindcss,
+    name: "Tailwind",
+  },
+  {
+    icon: SiMongodb,
+    name: "MongoDB",
+  },
+  {
+    icon: FaAws,
+    name: "AWS",
+  },
+  {
+    icon: FaPython,
+    name: "Python",
+  },
+  {
+    icon: FaJava,
+    name: "Java",
   },
 ];

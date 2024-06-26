@@ -21,6 +21,15 @@ const robotoslab = localFont({
   variable: "--font-roboto-slab",
 });
 
+const robotoslablight = localFont({
+  src: [
+    {
+      path: "../utils/fonts/RobotoSlab-ExtraLight.ttf",
+    },
+  ],
+  variable: "--font-roboto-slab-light",
+});
+
 export const metadata: Metadata = {
   title: "Henrys Portfolio",
   description: "A minimalist JS portfolio",
@@ -32,7 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${gambarino.variable} ${robotoslab.variable}`}>
+    <html
+      lang="en"
+      className={`${gambarino.variable} ${robotoslab.variable} ${robotoslablight.variable} scroll-smooth`}
+    >
       <body>
         <Header />
         {children}

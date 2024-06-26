@@ -28,6 +28,7 @@ const config: Config = {
       fontFamily: {
         gambarino: ["var(--font-gambarino)"],
         robotoSlab: ["var(--font-roboto-slab)"],
+        robotoSlabLight: ["var(--font-roboto-slab-light)"],
       },
       fontSize: {
         "9xl": "20.4rem",
@@ -37,9 +38,14 @@ const config: Config = {
           "0%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        slider: {
+          from: { transform: "translateX(0%)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         gradient: "gradient 3s linear infinite",
+        slider: "slider 20s linear infinite",
       },
     },
   },
