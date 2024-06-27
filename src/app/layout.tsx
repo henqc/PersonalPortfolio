@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${gambarino.variable} ${robotoslab.variable} ${robotoslablight.variable} scroll-smooth`}
+      className={`${gambarino.variable} ${robotoslab.variable} ${robotoslablight.variable}`}
     >
       <body>
         <Header />

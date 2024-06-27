@@ -10,6 +10,15 @@ import { useCallback, useEffect } from "react";
 import Lenis from "lenis";
 export default function Portfolio() {
   useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
     window.history.scrollRestoration = "manual";
   }, []);
   return (
