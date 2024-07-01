@@ -24,11 +24,11 @@ export default function Bio() {
           <motion.div
             initial="hidden"
             whileInView={"visible"}
-            viewport={{ once: true, amount: "some" }}
+            viewport={{ once: true, amount: 0.7 }}
             variants={boxVariants}
-            className="w-full h-[500px] rounded-3xl  bg-[#27272c] overflow-hidden"
+            className="w-full h-[550px] md:h-[350px] lg:h-[300px] xl:h-[500px] rounded-3xl  bg-[#27272c] overflow-hidden"
           >
-            <div className="flex flex-col items-center relative py-10 px-[100px] gap-[100px]">
+            <div className="flex flex-col items-center relative xl:py-10 xl:px-[100px] gap-[50px] xl:gap-[100px]">
               <motion.div
                 variants={fadein({ direction: "up", delay: 0.3 })}
                 initial="hidden"
@@ -55,7 +55,7 @@ export default function Bio() {
                   variants={fadein({ direction: "up", delay: 0.5 })}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: true, amount: 0.7 }}
+                  viewport={{ once: true }}
                 >
                   When I&apos;m not immersed in writing code or learning about
                   the latest technologies, you can find me enjoying video games

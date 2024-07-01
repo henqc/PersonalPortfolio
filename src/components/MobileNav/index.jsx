@@ -26,7 +26,7 @@ export default function MobileNav() {
             HC
           </ScrollLink>
         </div>
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="flex flex-col justify-center items-center gap-4">
           {navList.map((link, index) => {
             return (
               <ScrollLink
